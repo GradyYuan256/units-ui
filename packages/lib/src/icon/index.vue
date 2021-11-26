@@ -5,9 +5,12 @@ export default {
 </script>
 
 <script setup>
-import { computed } from "vue";
-import '../../assets/js/iconfont.js'
-
+import { computed, onMounted } from "vue";
+onMounted(() => {
+  import('../../assets/js/iconfont.js').then((str) => {
+    return str
+  })
+})
 const props = defineProps({
   name: {
     type: String,
