@@ -1,4 +1,4 @@
-import { fileURLToPath } from "url";
+// import { fileURLToPath } from "url";
 // import path from "path";
 
 import vue from 'rollup-plugin-vue'
@@ -8,7 +8,7 @@ import { terser } from "rollup-plugin-terser"
 import del from 'rollup-plugin-delete'
 
 // const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+// const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default {
   input: 'src/index.js',
@@ -17,15 +17,18 @@ export default {
       vue: 'Vue'
     },
     name: 'UnitsUI',
-    file: 'dist/index.umd.js',
+    dir: 'dist',
+    // file: 'dist/index.umd.js',
     format: 'umd',
     exports: "named",
     plugins: [terser({
       ecma: 2015
     })],
+    inlineDynamicImports: true
   }, {
     name: 'UnitsUI',
-    file: 'dist/index.esm.js',
+    dir: 'dist/esm',
+    // file: 'dist/index.esm.js',
     format: 'es',
     exports: "named",
     plugins: [terser({
@@ -33,7 +36,8 @@ export default {
     })]
   }, {
     name: 'UnitsUI',
-    file: 'dist/index.common.js',
+    dir: 'dist/cjs',
+    // file: 'dist/index.common.js',
     format: 'cjs',
     exports: "named",
     plugins: [terser({
@@ -52,8 +56,7 @@ export default {
       ],
       minimize: true,
       extensions: ['.css', '.less'],
-      extract: path.resolve(__dirname, 'theme/index.css'),
+      extract: 'theme/index.css',
     }),
-    
   ],
 }
