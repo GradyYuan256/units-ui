@@ -1,0 +1,39 @@
+.u-button-group {
+  display: inline-block;
+  vertical-align: middle;
+
+  >.u-button:hover {
+    position: relative;
+    z-index: 1;
+  }
+
+  >.u-button+.u-button {
+    margin-left: 0;
+  }
+
+  >.u-button:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  >.u-button:not(:first-child, :last-child) {
+    border-radius: 0;
+  }
+
+  >.u-button:last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  >.u-button:not(.u-button--default, :last-child) {
+    border-right: 1px solid white;
+  }
+
+  >.u-button--default:not(:first-child) {
+    margin-left: -1px;
+  }
+
+  >.u-button:is(.is-plain):not(.u-button--default, :first-child) {
+    border-left: 1px solid white;
+  }
+}
