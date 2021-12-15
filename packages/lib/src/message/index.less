@@ -1,0 +1,75 @@
+@import "../../assets/styles/variable.less";
+
+.u-message {
+    min-width: 180px;
+    max-width: 580px;
+    height: 40px;
+    padding: var(--u-unit-size-10) var(--u-unit-size-16);
+    padding-right: var(--u-unit-size-32);
+    box-sizing: border-box;
+    border-width: var(--u-unit-size-1);
+    border-style: solid;
+    border-color: transparent;
+    background-color: transparent;
+    border-radius: var(--u-border-radius-4);
+    position: fixed;
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top .2s, transform .2s;
+
+    &__close-btn {
+        position: absolute;
+        right: var(--u-unit-size-10);
+    }
+    &.is-left {
+        left: 5%;
+    }
+    &.is-right {
+        right: 5%;
+    }
+    &.is-center {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+}
+
+.u-message--default {
+    color: var(--u-default-color-4);
+    border-color: var(--u-default-color-4);
+    background-color: white;
+    box-shadow: 1px 1px 3px var(--u-default-color-1);
+}
+.u-message--primary {
+    color: var(--u-primary-color);
+    border-color: var(--u-primary-color-4);
+    background-color: var(--u-primary-color-2);
+    box-shadow: 1px 1px 3px var(--u-primary-color-1);
+}
+.u-message--success {
+    color: var(--u-success-color);
+    border-color: var(--u-success-color-4);
+    background-color: var(--u-success-color-2);
+    box-shadow: 1px 1px 3px var(--u-success-color-1);
+}
+.u-message--info {
+    color: var(--u-info-color);
+    border-color: var(--u-info-color-4);
+    background-color: var(--u-info-color-2);
+    box-shadow: 1px 1px 3px var(--u-info-color-1);
+}
+
+.u-message--warning {
+    color: var(--u-warning-color);
+    border-color: var(--u-warning-color-4);
+    background-color: var(--u-warning-color-2);
+    box-shadow: 1px 1px 3px var(--u-warning-color-1);
+}
+.u-message--error {
+    color: var(--u-error-color);
+    border-color: var(--u-error-color-4);
+    background-color: var(--u-error-color-2);
+    box-shadow: 1px 1px 3px var(--u-error-color-1);
+}
