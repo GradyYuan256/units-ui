@@ -6,3 +6,4 @@ export { default as UCheckboxGroup } from './checkbox-group/index.js';
 export { default as UDialog } from './dialog/index.js';
 export { default as UInput } from './input/index.js';
 export { default as useMessage } from './message/index.js';
+export { default as useMessageBox } from './message-box/index.js';

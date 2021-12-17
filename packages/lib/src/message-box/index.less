@@ -1,0 +1,58 @@
+@import "../../assets/styles/variable.less";
+
+.u-message-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 101;
+
+    &__core {
+        width: 420px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -70px 0 0 -210px;
+        background-color: white;
+        border-radius: var(--u-border-radius-4);
+
+        header {
+            padding: var(--u-unit-size-20);
+            padding-bottom: var(--u-unit-size-10);
+            position: relative;
+
+            .u-message-box__title {
+                display: inline-block;
+                max-width: 340px;
+                line-height: 1.5;
+                font-size: var(--u-unit-size-18);
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            
+            .u-icon-close {
+                cursor: pointer;
+                position: absolute;
+                top: var(--u-unit-size-20);
+                right: var(--u-unit-size-20);
+            }
+        }
+        main {
+            padding: var(--u-unit-size-10) var(--u-unit-size-20);
+            font-size: var(--u-unit-size-14);
+            color: var(--u-default-color);
+            position: relative;
+        }
+        footer {
+            padding: var(--u-unit-size-20);
+            padding-top: var(--u-unit-size-10);
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
+    }
+}
