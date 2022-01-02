@@ -8,3 +8,4 @@ export { default as UInput } from './input/index.js';
 export { default as useMessage } from './message/index.js';
 export { default as useMessageBox } from './message-box/index.js';
 export { default as URadio } from './radio/index.js';
+export { default as URadioButton } from './radio-button/index.js';
