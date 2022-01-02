@@ -7,3 +7,4 @@ export { default as UDialog } from './dialog/index.js';
 export { default as UInput } from './input/index.js';
 export { default as useMessage } from './message/index.js';
 export { default as useMessageBox } from './message-box/index.js';
+export { default as URadio } from './radio/index.js';
