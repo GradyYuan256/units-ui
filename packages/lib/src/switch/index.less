@@ -1,0 +1,95 @@
+@import "../../assets/styles/variable.less";
+
+
+.u-switch {
+    --switch-width: var(--u-unit-size-40);
+    --switch-height: var(--u-unit-size-22);
+    --core-diameter: var(--u-unit-size-18);
+    --toggle-offset: calc((var(--switch-height) - var(--core-diameter)) / 2);
+    --color-grey: var(--u-default-color-1);
+    --color-grey-disabled: var(--u-default-color-0);
+    --color-green: var(--u-primary-color);
+    --color-green-disabled: var(--u-primary-color-4);
+    --core-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3), inset 0 0 1px 0 rgba(0, 0, 0, 0.05);
+    --toggle-wider: var(--u-unit-size-24);
+    --box-shadow-focus: 0 0 0 2px rgba(24, 160, 88, 0.2);
+  
+    display: inline-block;
+    vertical-align: middle;
+    width: var(--switch-width);
+    height: var(--switch-height);
+    background-color: var(--color-grey);
+    box-sizing: border-box;
+    border-radius: calc(var(--switch-height) / 2);
+    position: relative;
+    cursor: pointer;
+  
+    & + .u-switch {
+      margin-left: 10px;
+    }
+  
+    &:focus-within {
+      box-shadow: var(--box-shadow-focus);
+    }
+  
+    &:active:not(.is-disabled) {
+      box-shadow: var(--box-shadow-focus);
+
+      > .u-switch__core {
+        width: var(--toggle-wider);
+      }
+  
+      &.is-checked {
+        .u-switch__core {
+          transform: translateX(calc(var(--switch-width) - var(--toggle-wider) - var(--toggle-offset)));
+        }
+      }
+    }
+  
+    > .u-switch__core {
+      display: inline-block;
+      width: var(--core-diameter);
+      height: var(--core-diameter);
+      box-sizing: border-box;
+      background-color: white;
+      border-radius: calc(var(--core-diameter) / 2);
+      position: absolute;
+      top: var(--toggle-offset);
+      transform: translateX(var(--toggle-offset));
+      box-shadow: var(--core-box-shadow);
+      transition: all .2s ease-in-out;
+    }
+  
+    > .u-switch__input {
+      position: absolute;
+      top: 0;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+  
+    &.is-square {
+      border-radius: var(--u-unit-size-4);
+  
+      & > .u-switch__core {
+        border-radius: var(--u-unit-size-4);
+      }
+    }
+  
+    &.is-checked {
+      background-color: var(--color-green);
+  
+      & > .u-switch__core {
+        transform: translateX(calc(var(--switch-width) - var(--core-diameter) - var(--toggle-offset)));
+      }
+    }
+    &.is-disabled {
+      background-color: var(--color-grey-disabled);
+      opacity: .7;
+      cursor: not-allowed;
+  
+      &.is-checked {
+        background-color: var(--color-green-disabled);
+      }
+    }
+  }
