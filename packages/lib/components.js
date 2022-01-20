@@ -11,3 +11,4 @@ export { default as URadio } from './radio/index.js';
 export { default as URadioButton } from './radio-button/index.js';
 export { default as URadioGroup } from './radio-group/index.js';
 export { default as USwitch } from './switch/index.js';
+export { default as useToast } from './toast/index.js';
