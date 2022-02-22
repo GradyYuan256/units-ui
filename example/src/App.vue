@@ -1,12 +1,14 @@
 <script setup>
 import IconsPage from './components/icons-page.vue'
 import ButtonPage from './components/button-page.vue'
+import RadiosPage from './components/radios-page.vue'
 </script>
 
 <template>
   <main>
     <icons-page></icons-page>
     <button-page></button-page>
+    <radios-page></radios-page>
   </main>
 </template>
 
