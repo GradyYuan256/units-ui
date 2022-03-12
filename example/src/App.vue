@@ -4,6 +4,7 @@ import ButtonPage from './components/button-page.vue'
 import RadiosPage from './components/radios-page.vue'
 import CheckboxPage from './components/checkbox-page.vue'
 import SwitchPage from './components/switch-page.vue'
+import DialogPage from './components/dialog-page.vue'
 </script>
 
 <template>
@@ -11,8 +12,9 @@ import SwitchPage from './components/switch-page.vue'
     <icons-page></icons-page>
     <button-page></button-page>
     <radios-page></radios-page>
-    <checkbox-page></checkbox-page>
     <switch-page></switch-page>
+    <checkbox-page></checkbox-page>
+    <dialog-page></dialog-page>
   </main>
 </template>
 
