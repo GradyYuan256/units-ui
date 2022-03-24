@@ -5,6 +5,7 @@ import RadiosPage from './components/radios-page.vue'
 import CheckboxPage from './components/checkbox-page.vue'
 import SwitchPage from './components/switch-page.vue'
 import DialogPage from './components/dialog-page.vue'
+import ToastPage from './components/toast-page.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import DialogPage from './components/dialog-page.vue'
     <switch-page></switch-page>
     <checkbox-page></checkbox-page>
     <dialog-page></dialog-page>
+    <toast-page></toast-page>
   </main>
 </template>
 
