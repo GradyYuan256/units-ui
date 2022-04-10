@@ -6,6 +6,7 @@ import CheckboxPage from './components/checkbox-page.vue'
 import SwitchPage from './components/switch-page.vue'
 import DialogPage from './components/dialog-page.vue'
 import ToastPage from './components/toast-page.vue'
+import MessagePage from './components/message-page.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import ToastPage from './components/toast-page.vue'
     <checkbox-page></checkbox-page>
     <dialog-page></dialog-page>
     <toast-page></toast-page>
+    <message-page></message-page>
   </main>
 </template>
 
