@@ -8,6 +8,7 @@ import DialogPage from './components/dialog-page.vue'
 import ToastPage from './components/toast-page.vue'
 import MessagePage from './components/message-page.vue'
 import MessageBoxPage from './components/message-box-page.vue'
+import InputPage from './components/input-page.vue'
 </script>
 
 <template>
@@ -21,6 +22,7 @@ import MessageBoxPage from './components/message-box-page.vue'
     <toast-page></toast-page>
     <message-page></message-page>
     <message-box-page></message-box-page>
+    <input-page></input-page>
   </main>
 </template>
 
