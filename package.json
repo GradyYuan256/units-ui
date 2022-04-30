@@ -8,7 +8,14 @@
     "node": ">= 16"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example:dev": "pnpm -F example dev",
+    "build_lib:dev": "pnpm -F units-ui build_lib:dev",
+    "build_lib:prod": "pnpm -F units-ui build_lib:prod",
+    "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "devDependencies": {
+    "eslint": "^8.25.0",
+    "eslint-plugin-vue": "^9.6.0"
   },
   "keywords": [],
   "author": "GradyYuan256",
