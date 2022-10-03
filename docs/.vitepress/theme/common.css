@@ -1,0 +1,11 @@
+/* 这里的样式是给 component 组件目录的 demo-page 使用的 */
+.demo-section {
+  box-shadow: 0 0 2px 1px #efefef;
+}
+.demo-section .demo-block {
+  padding: 20px 20px;
+  padding-bottom: 0;
+}
+.code-block code.hljs {
+  background: #efefef;
+}

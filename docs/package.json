@@ -1,0 +1,13 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "This is Units UI library docs.",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "units-ui": "workspace:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
