@@ -30,8 +30,8 @@ npm add units-ui -S
 yarn add units-ui
 ```
 
-### CDN
-也可以使用 CDN 的方式引入。
+### cdn
+也可以使用 `cdn` 的方式引入。
 ```html
 <!-- 引入样式 -->
 <link rel="stylesheet" href="https://unpkg.com/units-ui/lib/theme/index.css">
