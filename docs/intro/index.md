@@ -5,4 +5,4 @@
 
 写这个库的初心是学习 Vue 3 ，尽管社区内不推荐无止境的造轮子，但是**个人觉得有造轮子的能力相当重要**。
 
-如果你使用该库的时候遇到问题可以在仓库的 [issue](https://github.com/GradyYuan256/) 发起 ，再次感谢🙏。
+如果你使用该库的时候遇到问题可以在仓库的 [issue](https://github.com/GradyYuan256/units-ui/issues) 发起 ，再次感谢🙏。

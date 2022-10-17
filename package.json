@@ -10,7 +10,7 @@
   },
   "scripts": {
     "example:dev": "pnpm -F example dev",
-    "build_lib:dev": "pnpm -F units-ui build_lib:dev",
+    "build_lib:dev": "pnpm -F units-ui build_lib:dev --watch",
     "build_lib:prod": "pnpm -F units-ui build_lib:prod",
     "docs:dev": "vitepress dev docs --port 3000",
     "docs:build": "vitepress build docs",
