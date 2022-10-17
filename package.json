@@ -1,9 +1,10 @@
 {
-  "name": "units-ui",
+  "name": "units-component",
   "version": "1.0.0",
   "description": "This is a UI component library based on Vue3",
   "main": "index.js",
   "type": "module",
+  "packageManager": "pnpm@7.1.5",
   "engines": {
     "node": ">= 16"
   },
@@ -11,11 +12,17 @@
     "example:dev": "pnpm -F example dev",
     "build_lib:dev": "pnpm -F units-ui build_lib:dev",
     "build_lib:prod": "pnpm -F units-ui build_lib:prod",
+    "docs:dev": "vitepress dev docs --port 3000",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
     "lint:fix": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "devDependencies": {
+    "@highlightjs/vue-plugin": "^2.1.0",
     "eslint": "^8.25.0",
-    "eslint-plugin-vue": "^9.6.0"
+    "eslint-plugin-vue": "^9.6.0",
+    "highlight.js": "^11.6.0",
+    "vitepress": "1.0.0-alpha.20"
   },
   "keywords": [],
   "author": "GradyYuan256",

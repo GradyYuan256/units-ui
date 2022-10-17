@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "type": "module",
+  "packageManager": "pnpm@7.1.5",
   "engines": {
     "node": ">= 16"
   },
