@@ -24,9 +24,9 @@ yarn add units-ui
 也可以使用 `cdn` 的方式引入。
 ```html
 <!-- 引入样式 -->
-<link rel="stylesheet" href="https://unpkg.com/units-ui/lib/theme/index.css">
+<link rel="stylesheet" href="https://unpkg.com/units-ui/dist/theme/index.css">
 <!-- 引入组件库 -->
-<script src="https://unpkg.com/units-ui/lib/index.umd.js"></script>
+<script src="https://unpkg.com/units-ui/dist/index.js"></script>
 ```
 
 ### Vue 3 project
