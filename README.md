@@ -54,7 +54,10 @@ app.mount('#app')
 
 ## 文档
 要查看示例代码和详细的组件文档，请访问[文档](https://github.com/GradyYuan256/units-ui/)。
+```bash
+sh deploy-docs.sh # 部署文档
+```
 
 ## LICENSE
 [MIT](https://opensource.org/licenses/MIT)
-Copyright (c) 2022 GradyYuan
+Copyright (c) 2022 GradyYuan256

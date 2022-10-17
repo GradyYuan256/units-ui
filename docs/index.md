@@ -14,5 +14,5 @@ hero:
       link: /component/install
     - theme: alt
       text: View on GitHub
-      link: https://github.com/GradyYuan256/
+      link: https://github.com/GradyYuan256/units-ui/
 ---

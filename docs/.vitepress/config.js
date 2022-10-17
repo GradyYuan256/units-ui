@@ -1,11 +1,12 @@
 export default {
+  base: '/units-ui-docs/',
   outDir: './dist',
   themeConfig: {
     siteTitle: "Units-UI",
     logo: "/units-logo-2.png",
     nav: nav(),
     socialLinks: [
-      { icon: "github", link: "https://github.com/GradyYuan256/zao-ui" },
+      { icon: "github", link: "https://github.com/GradyYuan256/units-ui" },
     ],
     footer: {
       message: "Released under the MIT License.",
