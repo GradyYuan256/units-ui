@@ -1,7 +1,7 @@
 {
   "name": "units-ui",
-  "version": "0.1.0",
-  "description": "This is a UI component library based on Vue3",
+  "version": "0.1.2",
+  "description": "A UI component library based on Vue 3",
   "main": "dist/index.js",
   "module": "dist/esm/index.js",
   "type": "module",
@@ -10,7 +10,9 @@
     "node": ">= 16"
   },
   "files": [
-    "dist"
+    "dist",
+    "assets",
+    "src"
   ],
   "scripts": {
     "clean": "rimraf dist",
@@ -40,7 +42,22 @@
     "iOS 7",
     "last 3 iOS versions"
   ],
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:GradyYuan256/units-ui.git"
+  },
+  "homepage": "https://github.com/GradyYuan256/units-ui",
+  "keywords": [
+    "units",
+    "units-ui",
+    "vue3",
+    "components"
+  ],
+  "bugs": {
+    "url": "https://github.com/GradyYuan256/units-ui/issues"
+  },
+  "unpkg": "dist/index.js",
+  "style": "dist/theme/index.css",
   "author": "GradyYuan256",
   "license": "MIT"
 }

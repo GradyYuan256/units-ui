@@ -64,6 +64,7 @@ const handleClick7 = () => {
   msg({
     message: message.value,
     type: "info",
+    autoClose: false,
     customClass: "msg-custom",
     onClose: () => {
       console.log("close custom class message");
