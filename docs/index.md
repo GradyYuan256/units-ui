@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: Units-UI
-  text: This is a UI component library based on Vue3.
+  text: 基于 Vue 3 实现的 UI 组件库
   tagline: WIP.
   image:
     src: /units-logo-1.png
