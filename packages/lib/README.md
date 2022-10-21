@@ -43,7 +43,7 @@ app.mount('#app')
 ```
 
 ## 文档
-要查看示例代码和详细的组件文档，请访问[文档](https://github.com/GradyYuan256/units-ui/)。
+要查看示例代码和详细的组件文档，请访问[文档](https://gradyyuan256.github.io/units-ui-docs/)。
 
 ## LICENSE
 [MIT](https://opensource.org/licenses/MIT)
