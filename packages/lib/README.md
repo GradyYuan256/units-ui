@@ -47,4 +47,4 @@ app.mount('#app')
 
 ## LICENSE
 [MIT](https://opensource.org/licenses/MIT)
-Copyright (c) 2022 GradyYuan
+Copyright (c) 2022 GradyYuan256
